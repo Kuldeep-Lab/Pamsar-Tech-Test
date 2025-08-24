@@ -1,0 +1,222 @@
+    .button {
+      background-color: #ff1493;
+      color: #fff;
+    }
+ 
+    .button:hover {
+      background-color: #e60073;
+      color: #fff;
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-link:hover {
+        color: #fff;
+    }
+
+    .nav-item {
+         border-bottom-style: solid;
+         border-bottom-color: black;   
+    }
+    .nav-item:hover {
+        border-bottom-style: solid;
+        border-bottom-color: #9cf06e;
+    }
+
+   .hero-section {
+    background-color: #000000;
+    background-size :cover;
+    background-image: url(https://barterpay.ca/wp-content/themes/barter-pay/img/shape-background.svg);
+    mask-image: url(https://barterpay.ca/wp-content/themes/barter-pay/img/dividers/lg-black-down.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 100px;
+   }
+
+   .front-title {
+    font-size: 4.5vmax; 
+    font-family: "Work Sans", sans-serif;
+    line-height: normal;
+    padding-left: 10vmax;
+  }
+
+  .front-subtext {
+    padding-left: 10vmax;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .bottom-text {
+   font-size: 4vh;
+   font-weight: 400;
+  }
+
+  .front-logo {
+    height: 30vh;
+    padding-left: 60px;
+    margin-top: 100px;
+    
+  }
+
+.text-rotate {
+  display: inline-block;
+  position: relative;
+  width: 12ch; /* adjust based on longest phrase */
+  height: 1.2em;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.text-rotate span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: rotateWords 8s ease-in-out infinite;
+}
+
+.text-rotate span:nth-child(1) { animation-delay: 0s; }
+.text-rotate span:nth-child(2) { animation-delay: 2s; }
+.text-rotate span:nth-child(3) { animation-delay: 4s; }
+.text-rotate span:nth-child(4) { animation-delay: 6s; }
+
+@keyframes rotateWords {
+  0%   { opacity: 0; transform: translateY(100%); }
+  10%  { opacity: 1; transform: translateY(0%); }
+  25%  { opacity: 1; transform: translateY(0%); }
+  35%  { opacity: 0; transform: translateY(-100%); }
+  100% { opacity: 0; }
+}
+
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 4px;  /* thickness of underline */
+  background-color: #9cf06e; /* neon green underline */
+  transition: width 0.6s ease-in-out;
+}
+
+/* Animate underline when page loads */
+.underline.animate::after {
+  width: 100%;
+}
+
+.video-img {
+     height: 70vh;
+     width: 60vw;
+     max-width: 100vw;
+}
+
+.third-section {
+  background-color: #000000;
+  mask-image: url(https://barterpay.ca/wp-content/themes/barter-pay/img/dividers/lg-black-down.svg);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.text-img {
+  height: 80vh;
+}
+
+.testimonial {
+    font-family: "Work Sans", sans-serif;
+    padding-top: 70px;
+    font-size: 3vh;
+}
+
+.forth-heading {
+  padding-left: 12vmax;
+}
+
+.forth-img {
+  height: 30vh;
+  width: 30vw;
+  padding-left: 10vmax;
+}
+
+.forth-text {
+  font-family: "Work Sans", sans-serif;
+    padding-top: 70px;
+    font-size: 3.5vh;
+    padding-right: 100px;
+}
+
+
+/* .footer {
+  background-image: url(https://barterpay.ca/wp-content/themes/barter-pay/img/shape-background.svg);
+  background-color: #000000;
+  color: #fff;
+} */
+
+
+/* mobile size */
+@media screen and (max-width: 475px) {
+
+.front-title {
+  padding-left: 0%;
+}  
+
+.front-subtext {
+  padding-left: 0%;
+}
+
+.bottom-text {
+   font-size: 2.5vh;
+   font-weight: 300;
+  }
+
+.front-logo {
+    height: 18vh;
+    padding-left: 140px;
+    margin-top: 80px;
+    
+  }
+
+  .video-img {
+    width: 100%;
+    max-width: 100%;
+    height: 30vh;
+  }
+
+  .text-img {
+    max-width: 100%;
+    height: 50vh;
+  }
+
+  .testimonial {
+    padding-top: 20px;
+    font-size: 2.4vh;
+  }
+
+  .forth-heading {
+  padding-left: 0%;
+}
+
+.forth-text {
+  font-size: 2.4vh;
+  padding-top: 10px;
+}
+  .forth-img {
+  height: 25vh;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  right: 50px;
+}
+}
