@@ -183,7 +183,7 @@
 
 .front-logo {
     height: 18vh;
-    padding-left: 140px;
+    padding-left: 125px;
     margin-top: 80px;
     
   }
@@ -219,4 +219,5 @@
   position: relative;
   right: 50px;
 }
+
 }
